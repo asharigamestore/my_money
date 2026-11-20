@@ -1,0 +1,24 @@
+/* ============================================================
+   MY MONEY — animations.css
+   ============================================================ */
+@keyframes fadeUp{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:translateY(0)}}
+@keyframes toastIn{from{opacity:0;transform:translateY(-14px) scale(.96)}to{opacity:1;transform:translateY(0) scale(1)}}
+@keyframes toastOut{to{opacity:0;transform:translateY(-10px) scale(.97)}}
+@keyframes pulseSoft{0%,100%{opacity:1}50%{opacity:.55}}
+
+.page-enter > *{animation:fadeUp .45s cubic-bezier(.22,.8,.3,1) both}
+.page-enter > *:nth-child(2){animation-delay:.06s}
+.page-enter > *:nth-child(3){animation-delay:.12s}
+.page-enter > *:nth-child(4){animation-delay:.18s}
+.page-enter > *:nth-child(5){animation-delay:.24s}
+
+.tx-row{animation:fadeUp .4s cubic-bezier(.22,.8,.3,1) both}
+.sav-card{animation:fadeUp .4s cubic-bezier(.22,.8,.3,1) both}
+
+.card.hoverable{transition:transform var(--tr),box-shadow var(--tr)}
+.nav-item{transition:color var(--tr),background var(--tr)}
+.ratio-fill,.progress-bar{transition:width .8s cubic-bezier(.22,.8,.3,1)}
+
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation-duration:.01ms !important;transition-duration:.01ms !important}
+}

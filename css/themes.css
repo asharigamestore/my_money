@@ -1,0 +1,67 @@
+/* ============================================================
+   MY MONEY — themes.css
+   Design tokens & color system (CSS variables)
+   ============================================================ */
+:root{
+  --font-ui:'Plus Jakarta Sans',system-ui,-apple-system,sans-serif;
+  --font-data:'Inter',system-ui,sans-serif;
+  --font-info:'Roboto',system-ui,sans-serif;
+  --font-serif:'Playfair Display',Georgia,serif;
+  --radius-xl:32px;
+  --radius-lg:26px;
+  --radius-md:18px;
+  --radius-sm:13px;
+  --tr:.28s cubic-bezier(.22,.8,.3,1);
+}
+
+[data-theme="light"]{
+  color-scheme:light;
+  --bg:#f4f8ff;
+  --bg-grad:radial-gradient(1100px 560px at 85% -12%, rgba(47,107,255,.10), transparent 60%),
+            radial-gradient(900px 520px at -12% 112%, rgba(122,184,255,.16), transparent 55%),
+            #f4f8ff;
+  --primary:#2f6bff;
+  --primary-strong:#1e54e6;
+  --primary-soft:rgba(47,107,255,.12);
+  --secondary:#7ab8ff;
+  --card:rgba(255,255,255,.84);
+  --card-solid:#ffffff;
+  --text:#0e1b33;
+  --muted:#5d6d89;
+  --faint:#8b99b4;
+  --border:#e4ebf8;
+  --shadow:0 14px 38px rgba(20,50,120,.10);
+  --shadow-sm:0 4px 14px rgba(20,50,120,.08);
+  --ok:#0f9d68;      --ok-soft:rgba(15,157,104,.12);
+  --bad:#df4060;     --bad-soft:rgba(223,64,96,.12);
+  --info:#2f6bff;    --info-soft:rgba(47,107,255,.12);
+  --warn:#d98a12;
+  --track:#e8eef9;
+  --overlay:rgba(14,27,51,.45);
+}
+
+[data-theme="dark"]{
+  color-scheme:dark;
+  --bg:#060a14;
+  --bg-grad:radial-gradient(1100px 560px at 85% -12%, rgba(77,141,255,.17), transparent 60%),
+            radial-gradient(900px 520px at -12% 112%, rgba(28,58,138,.28), transparent 55%),
+            #060a14;
+  --primary:#4d8dff;
+  --primary-strong:#82b0ff;
+  --primary-soft:rgba(77,141,255,.16);
+  --secondary:#16305e;
+  --card:rgba(18,24,40,.80);
+  --card-solid:#121828;
+  --text:#eef3ff;
+  --muted:#9aa8c4;
+  --faint:#64718e;
+  --border:#1e2940;
+  --shadow:0 14px 38px rgba(0,0,0,.48);
+  --shadow-sm:0 4px 14px rgba(0,0,0,.36);
+  --ok:#3ecf8e;      --ok-soft:rgba(62,207,142,.14);
+  --bad:#ff6b81;     --bad-soft:rgba(255,107,129,.14);
+  --info:#6ea3ff;    --info-soft:rgba(110,163,255,.15);
+  --warn:#f5b544;
+  --track:#182238;
+  --overlay:rgba(2,5,12,.62);
+}
