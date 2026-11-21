@@ -32,7 +32,7 @@
   .grid-2,.grid-3{grid-template-columns:1fr;gap:14px}
   .row-2{grid-template-columns:1fr}
   .toolbar{gap:8px}
-  .modal{border-radius:var(--radius-xl) var(--radius-xl) 0 0}
+  .app-modal{border-radius:var(--radius-xl) var(--radius-xl) 0 0}
 }
 
 /* Desktop: sidebar layout */
