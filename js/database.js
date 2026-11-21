@@ -36,8 +36,8 @@ const DB = (() => {
     NAME, VERSION, INCOME_CATS, EXPENSE_CATS, TRANSFER_CATS, METHODS, open,
 
     async seed() {
-      if (await wrap(os('categories').count()) > 0) return;
-      const tx = os('categories', 'readwrite');
+      if (await wrap(os('accounts').count()) > 0) return;
+      const tx = os('accounts', 'readwrite');
       INCOME_CATS.forEach(name => tx.put({ id: Utils.uid(), name, type: 'income', builtin: true, createdAt: Date.now() }));
       EXPENSE_CATS.forEach(name => tx.put({ id: Utils.uid(), name, type: 'expense', builtin: true, createdAt: Date.now() }));
       tx.put({ id: 'acc-main', name: 'Dompet Utama', type: 'cash', createdAt: Date.now() });
