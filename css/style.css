@@ -242,7 +242,7 @@ button:focus-visible,a:focus-visible,input:focus-visible,select:focus-visible{
   opacity:0;transition:opacity .25s ease;
 }
 .modal-overlay.show{opacity:1}
-.modal{
+.app-modal{
   width:100%;max-width:520px;max-height:88dvh;overflow-y:auto;
   background:var(--card-solid);border:1px solid var(--border);
   border-radius:var(--radius-xl) var(--radius-xl) 0 0;
@@ -250,7 +250,7 @@ button:focus-visible,a:focus-visible,input:focus-visible,select:focus-visible{
   transform:translateY(40px);opacity:0;transition:transform .32s cubic-bezier(.22,.8,.3,1),opacity .3s ease;
   box-shadow:var(--shadow);
 }
-.modal-overlay.show .modal{transform:translateY(0);opacity:1}
+.modal-overlay.show .app-modal{transform:translateY(0);opacity:1}
 .modal-head{display:flex;align-items:center;justify-content:space-between;margin-bottom:18px}
 .modal-head h3{font-size:1.08rem;font-weight:800}
 .modal-foot{display:flex;gap:10px;margin-top:20px}
