@@ -117,7 +117,7 @@ const Modal = {
     const root = document.getElementById('modal-root');
     root.innerHTML = `
       <div class="modal-overlay" id="modal-overlay">
-        <div class="modal" role="dialog" aria-modal="true" aria-label="${Utils.esc(opts.title || 'Dialog')}">
+        <div class="app-modal" role="dialog" aria-modal="true" aria-label="${Utils.esc(opts.title || 'Dialog')}">
           <div class="modal-head">
             <h3>${Utils.esc(opts.title || '')}</h3>
             <button type="button" class="icon-btn" data-close aria-label="Tutup"><i data-lucide="x"></i></button>
@@ -184,7 +184,7 @@ const Modal = {
       const root = document.getElementById('modal-root');
       root.innerHTML = `
         <div class="modal-overlay" id="modal-overlay">
-          <div class="modal" role="alertdialog" aria-modal="true" style="max-width:420px">
+          <div class="app-modal" role="alertdialog" aria-modal="true" style="max-width:420px">
             <div class="modal-head"><h3>${Utils.esc(title)}</h3>
               <button type="button" class="icon-btn" data-close aria-label="Tutup"><i data-lucide="x"></i></button>
             </div>
